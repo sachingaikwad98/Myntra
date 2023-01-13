@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <script src="https://kit.fontawesome.com/fc972efdeb.js" crossorigin="anonymous"></script>
+    <script src="./project1.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg');
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* overflow: hidden; */
+            color: antiquewhite;
+        }
+
+        #container {
+            /* border: 2px solid red; */
+            width: 600px;
+            height: 600px;
+            padding: 2px;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 10px 10px 5px 10px lightblue;
+
+        }
+
+        #Register {
+            align-self: center;
+        }
+
+        #Register h1 {
+            text-shadow: 2px 2px red;
+        }
+
+
+        #right {
+            align-self: center;
+            text-shadow: 2px 2px red;
+
+        }
+
+        #navbar {
+            background-color: aliceblue;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            box-shadow:  0px 5px 5px burlywood;
+
+
+        }
+
+        #panel {
+            align-self: center;
+            margin-left: 50px;
+        }
+
+        #panel a {
+            margin-left: 25px;
+            color: black;
+
+            /* justify-content: space-around; */
+        }
+
+        #navbar img {
+            height: 60px;
+            margin-left: 50px;
+            margin-top: 5px;
+            align-self: center;
+
+        }
+
+        #profile {
+            margin-left: 50px;
+            align-self: center;
+            display: flex;
+        }
+
+        .icon{
+            margin-left: 20px;
+            color: black;
+        }
+
+        .icon i {
+            margin-left: 25px;
+        }
+
+
+        #searchbar>input {
+            width: 400px;
+
+        }
+
+        #Name {
+            margin-top: 5px;
+            margin-left: 35px
+        }
+
+        #Email {
+            margin-top: 5px;
+            margin-left: 35px;
+        }
+
+        #Password {
+            margin-top: 5px;
+            margin-left: 35px;
+        }
+
+        .RegButton {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .RegButton:hover {
+            color: brown;
+            background-color: aqua;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="navbar" style="border: 2PX SOLID RED;">
+        <div id="logo"> <img
+                src="https://gumlet.assettype.com/afaqs%2F2021-01%2F15f5f827-8e29-4520-af8d-a0f353b8da17%2Fimages.png?auto=format%2Ccompress&w=360&dpr=2.6"
+                alt="Logo"></div>
+        <div id="panel">
+            <!-- <ul>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>WOMEN</li>
+                <li>HOME&LIVING</li>
+                <li>BEAUTY</li>
+                <li>STUDIO <SUP style="color: RED;">NEW</SUP></li>
+            </ul> -->
+            <!-- <a href="#">MEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">WOMEN</a>
+            <a href="#">HOME&LIVING</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">STUDIO<SUP style="color: RED;">NEW</SUP></a>
+        </div>
+        <div id="profile">
+            <div id="searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                <input type="text" placeholder="Search for prodcts brands and more.......">
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            </div> --> -->
+
+
+
+        </div>
+
+    </div>
+    <div id="container">
+        <div id="Register">
+            <h1> Register Here </h1>
+            <div id="content">
+                <input type="text" id="Name" placeholder="Type your full name"> <br>
+                <input type="email" id="Email" placeholder="Type your Email-id"> <br>
+                <input type="password" id="Password" placeholder="Create a password"> <br>
+                <button onclick="register()" class="RegButton">Register Now</button>
+                <button class="RegButton"><a href="./login (Project1).html"> Go to Log-in</a></button>
+                <hr>
+            </div>
+
+        </div>
+        <div id="right">
+            <h1>Welcome to the Unique Experinece</h1>
+            <p> Lets Explore with us <a href="#" style="font-weight: 900; color: black;">Register Now</a> </p>
+            <div id="hover">Get register with us by providing some info</div>
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>

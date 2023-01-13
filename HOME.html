@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/fc972efdeb.js" crossorigin="anonymous"></script>
+    <script src="./project1.js"></script>
+
+    <style>
+        #navbar {
+            background-color: aliceblue;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            box-shadow: 0px 5px 5px black;
+
+        }
+
+        #panel {
+            align-self: center;
+            margin-left: 20px;
+        }
+
+        #panel a {
+            margin-left: 20px;
+            color: black;
+
+            /* justify-content: space-around; */
+        }
+
+        #navbar img {
+            height: 60px;
+            margin-left: 50px;
+            margin-top: 5px;
+            align-self: center;
+
+        }
+
+        #profile {
+            margin-left: 50px;
+            align-self: center;
+            display: flex;
+        }
+
+        .icon {
+            margin-left: 20px;
+            color: black;
+        }
+
+        .icon i {
+            margin-left: 25px;
+        }
+
+
+        #searchbar>input {
+            width: 400px;
+        }
+
+        #icon {
+            display: flex;
+            margin-left: 25px;
+        }
+
+        #icon i {
+            margin-left: 25px;
+        }
+
+        /* homepage gallery css */
+        #gallery {
+            margin-top: 40px;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            box-shadow: 5px 8px 10px;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: 400px;
+            
+        }
+
+        /* Deal of the day CSS */
+
+        .Row {
+            /* border: 5px solid red; */
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 2px 5px 10px palevioletred;
+        }
+
+        .Row a img {
+            width: 170px
+        }
+
+        #foot1 {
+            list-style: none;
+        }
+
+        #foot2 {
+            list-style: none;
+        }
+
+        #foot3 a img {
+            width: 120px;
+            height: 40px;
+
+        }
+
+        .footer {
+            display: flex;
+            color: gray;
+            font-size: 12px;
+            margin-top: 55px;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Welcome to the Homepage </h1>
+
+        <!-- Navbar Starts -->
+    </div>
+    <div id="navbar" style="border: 2PX SOLID RED;">
+        <div id="logo"> <a href="./HOME.html"><img
+                src="https://gumlet.assettype.com/afaqs%2F2021-01%2F15f5f827-8e29-4520-af8d-a0f353b8da17%2Fimages.png?auto=format%2Ccompress&w=360&dpr=2.6"
+                alt="Logo"></a></div>
+        <div id="panel">
+            <a href="./project_productspage.html">MEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">WOMEN</a>
+            <a href="#">HOME&LIVING</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">STUDIO<SUP style="color: RED;">NEW</SUP></a>
+        </div>
+        <div id="profile">
+            <div id="searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                <input type="text" placeholder="Search for prodcts brands and more.......">
+            </div>
+
+            <div id="icon">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a onclick="logOut()" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Ends-->
+
+    <!-- Body starts -->
+
+    <div id="gallery">
+        <img src="./myntra homepage.jpg" />
+    </div>
+
+    <!-- First Row Starts -->
+    <div>
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> DEAL OF THE DAY </h1>
+    </div>
+
+    <div class="Row">
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/49939a83-5bf1-4c78-b55d-40d7545f843e1660744474034-Kurtas--4-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/d5f885c5-4a54-4634-81da-6333aa51c1a11660744537981-Dresses--13-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ca8aa842-a6ed-4c53-b85a-5d7551a650121660744817501-Work-Ready-Shoes--1-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/04672f44-d01c-4f5a-b005-8e01c00582261660744864260-Casual-Shoes---Flip-Flops--4-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/9e19d40a-6720-4d62-92e0-32cd1ee6bee91660744897243-Flats---Heels--3-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/0e56c483-33e8-4ea5-bae0-96020b7b31401660744930158-Dinnerware---Kitchenware.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/948bd0a5-5b50-4b1e-93cc-234a9be8cfe11660744976622-Accessories--2-.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/8/17/ffa236ca-da08-4fb8-bec3-9b4950c943851660745008808-KAMA.jpg"
+                alt=""></a>
+    </div>
+
+    <!-- First Row Ends -->
+
+    <!-- Second Row Starts -->
+
+    <div>
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> BEST OF MYNTRA EXCLUSIVE BRANDS
+        </h1>
+    </div>
+
+    <div class="Row">
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/062cea23-9a6a-44b9-bdd4-87cae6a462311645602543339-Kurta-sets.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/8d65d400-decd-4f42-902c-a40350a16ed11645602543346-Kurtas.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/046147d1-1874-4c10-adb9-6dbd88b606e71644407437923-Kurtas-_Anouk-_Sangria_-_more.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/76acf345-fc62-4b49-8b2c-9c0fc9c925311644407437977-Tops_-_Dressberry-_AAY_-_more.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/3923c0c1-2260-4f0e-9598-15b6f9d7731c1644407437960-Roadster_and_H-N_Shirts.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/eb70855e-98c4-412d-bf20-50804546d57e1644407437883-Dresses_-_Dressberry-_Chemistry_-_more.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_122,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/9/f9621136-0f00-44d5-aa06-b727a6c8f7c51644407437944-M-H_and_Wrogn_Shirts.jpg"
+                alt=""></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/23/c6b09c0f-5c57-472c-a3fc-854ec506a90e1645602543387-Men-T-shirt.jpg"
+                alt=""></a>
+
+    </div>
+
+    <!-- Second Row Ends -->
+
+    <!-- Third Row Starts -->
+
+    <div>
+        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> COLOURS OF THE SEASON
+        </h1>
+    </div>
+
+    <div class="Row">
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/53a0e7bc-64e7-4fb3-94fd-a1ada51fbefa1647516450800-SS22-Colours-Metallic-Hues.jpg"
+                alt="" style="width: 340px; height: 250px;"></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/17/a6ef0785-eb3c-4726-a6ba-c09f6a44379c1647516450782-SS22-Colours-Elegant-Olive.jpg"
+                alt="" style="width: 340px; height: 250px;"></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/8/65446aed-c0e9-4bab-af02-3e96c6ad7ab51646753796263-SS22-Colours-Cobalt.jpg"
+                alt="" style="width: 340px; height: 250px;"></a>
+        <a href="#"><img
+                src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/26/3b1d43f4-46bf-4e3f-903b-ec5ca5c2bac91645860983331-SS22-Colours-Mens-BreezyWhite.jpg"
+                alt="" style="width: 340px; height: 250px;"></a>
+
+    </div>
+
+    <!-- Footer Starts -->
+
+    <footer>
+        <div class="footer">
+            <div>
+                <ul id="foot1">
+                    <li>
+                        <h4>Online Shoppping</h4>
+                    </li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home&Living</li>
+                    <li>BEAUTY</li>
+                    <li>Gift Cards</li>
+                    <li>Myntra Insider</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="foot2">
+                    <li>
+                        <h4>CUSTOMER POLICIES</h4>
+                    </li>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms Of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                </ul>
+            </div>
+            <div id="foot3">
+                <span> Experience MYNTRA APP ON MOBILE</span> <br>
+                <a href="https://play.google.com/store/apps/details?id=com.myntra.android&pli=1"><img
+                        src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+                        alt=""></a>
+                <a href="https://apps.apple.com/in/app/myntra-indias-fashion-store/id907394059"><img
+                        src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+                        alt=""></a>
+            </div>
+
+        </div>
+        <div style="text-align: center;">
+            <span>
+                <em> **100% ORIGINAL guarantee for all products at myntra.com</em>
+            </span>
+            <span>
+                <em>Return within 30days of receiving your order **</em>
+                </span>
+        </div>
+        </div>
+        <div></div>
+        <div></div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

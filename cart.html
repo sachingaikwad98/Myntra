@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="./project1.js"></script>
+    <script>
+        // Step1= Import Data from Local Storage
+        // Step2= map the data and push every product to html
+
+        window.onload = function(){
+            var isLoggedIn = JSON.parse(localStorage.getItem("isUserLoggedin"));
+            console.log(isLoggedIn)
+
+            if(isLoggedIn == true){
+                alert("Welcome Home !")
+                var allProducts = JSON.parse(localStorage.getItem("allProducts"));
+                console.log(allProducts, "allProducts");
+                var leftCart= document.getElementById("leftCart")
+                var rightCart =document.getElementById("totalPrice");
+
+                // Right cart sathiii......
+
+            var rightDivepriceTotalTag = document.createElement("span");
+            var totalPrice = 0 ;
+
+                for(var i =0; i<allProducts.length; i++){
+                    console.log(allProducts[i], "allProducts")
+                    const innerDiv = document.createElement("div");
+                    innerDiv.style.display = "flex";
+
+                     // इमेज कार्ट पेज वर दिसावी यासाठी arragement 
+                    var leftDiv  = document.createElement("div");
+                    var img= document.createElement("img");
+                    img.src = allProducts[i].pI; 
+                    img.style.width = "150px"
+                    img.style.height ="160px"
+                    leftDiv.append(img);
+
+                    var rightDiv  = document.createElement("div");
+            
+                    // प्रोडक्ट च नाव  कार्ट पेज वर दिसावे यासाठी arragement  
+                    var name=document.createElement("h4");
+                    name.innerText = allProducts[i].pN;
+                    rightDiv.append(name);
+
+                    // प्रोडक्ट ची प्राइज  कार्ट पेज वर दिसावे यासाठी arragement 
+                     
+                    var price = document.createElement("p");
+                    price.innerText= allProducts[i].pP;
+                    totalPrice = totalPrice + Number(allProducts[i].pP);
+                    rightDiv.append(price);
+
+                    innerDiv.append(leftDiv);
+                    innerDiv.append(rightDiv)
+
+                    //लेफ्टकार्ट मधे आपला innerdiv append केला 
+
+                    leftCart.append(innerDiv);
+                } 
+                rightDivepriceTotalTag.append(totalPrice);
+                rightCart.append(rightDivepriceTotalTag);
+            
+
+
+            } else {
+                alert("Login First !")
+                window.location.href='./login (Project1).html'
+            }
+            
+        }
+          
+    </script>
+    <style>
+        #screen {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen>div {
+            width: 60%;
+            border: 2px solid greenyellow;
+            /* margin: auto; */
+        }
+
+        #mainbox {
+            display: flex;
+            /* height: 500px; */
+            margin: auto;
+            margin-top: 50px;
+        }
+
+
+        #mainbox>div>section{
+            border: 1px solid thistle;
+            height: 40px;
+        }
+
+        #mainbox>div>div{
+            border: 1px solid thistle;
+            /* height: 40px; */
+        }
+
+        #totalPrice{
+            font-size: larger;
+            color: #ff3f6c;
+            font-weight: bold;
+        }
+
+        #orderButton{
+            background-color:#ff3f6c;
+            text-align: center;
+            width: 90%;
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 25px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="mainbox">
+            <div style="border: 2px solid red; width: 60%;">
+                <section>Deliver to: "Address"</section>
+                <div> Special Offers</div>
+                <div>Yay! <strong>No convenience fee </strong>on this order</div>
+                <h2 style="box-shadow: 2px 2px 5px black ; color: pink;"> You chose to buy the following items.....? Lets have a deal ..</h2>
+                <div id="leftCart">
+                </div>
+            </div>
+
+
+            <div id="rightCart" style="border: 2px solid rgb(115, 0, 255); width: 40%;">
+                <section> 
+                    <p>Coupons</p> <br>
+                    <span><i class="fa-solid fa-ribbon"></i></span>
+                    <h4>Apply Coupons</h4> 
+                    <button> Apply </button>
+                    <hr>
+                    <table>
+                        <th>Price Details </th>
+                        <tr>
+                            <td>Total MRP</td>
+                            <td>Rs.0</td>
+                        </tr>
+                        <tr>
+                            <td>Total MRP</td>
+                            <td>Discount on MRP</td>
+                        </tr>
+                        <tr>
+                            <td>Coupon Discount </td>
+                            <td><a style="color: #ff3f6c;" href="#">Apply Coupon</a></td>
+                        </tr>
+                        <span>Convenience Fee <a style="color: #ff3f6c;" href="#">Know More</a> &#8377 
+                            <S>99</S> <span style="color: green;">Free</span> </span>
+                    </table> 
+                    <hr>
+                    <span>
+                        Total Amount
+                    </span>
+                    <span id="totalPrice"></span> <br>
+                    <a href="#"><button id="orderButton"> Place Order</button></a>
+                </section>
+
+
+            
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

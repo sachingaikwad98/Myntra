@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://kit.fontawesome.com/fc972efdeb.js" crossorigin="anonymous"></script>
+
+    <script src="./project1.js"></script>
+
+    <style>
+        #navbar {
+            background-color: aliceblue;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            position: fixed;
+            top: 0;
+            box-shadow: 0px 5px 5px black;
+
+        }
+
+        #panel {
+            align-self: center;
+            margin-left: 20px;
+        }
+
+        #panel a {
+            margin-left: 20px;
+            color: black;
+
+            /* justify-content: space-around; */
+        }
+
+        #navbar img {
+            height: 60px;
+            margin-left: 50px;
+            margin-top: 5px;
+            align-self: center;
+
+        }
+
+        #profile {
+            margin-left: 50px;
+            align-self: center;
+            display: flex;
+        }
+
+        .icon {
+            margin-left: 20px;
+            color: black;
+        }
+
+        .icon i {
+            margin-left: 25px;
+        }
+
+
+        #searchbar>input {
+            width: 400px;
+        }
+
+        #icon {
+            display: flex;
+            margin-left: 25px;
+        }
+
+        #icon i {
+            margin-left: 25px;
+        }
+
+        #leftbar {
+            margin-top: 80px;
+            border: 2px solid red;
+            width: 18%;
+        }
+
+        #leftbar>div:nth-child(1) {
+            display: flex;
+            font-size: 12PX;
+            justify-content: space-between;
+        }
+
+        .dot {
+            height: 8px;
+            width: 8px;
+            background-color: pink;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #rightbar {
+            width: 82%;
+            border: 2px solid blue;
+            margin-top: 80px;
+        }
+
+        #rightbar>div {
+            display: flex;
+            margin-top: 10px;
+            border: 2px solid black;
+            margin-left: 10px;
+            height: 300px;
+
+
+        }
+
+        #rightbar>div>div {
+            width: 18%;
+            border: 1px solid red;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 5px 5px 5px ;
+
+        }
+
+        #rightbar>div>div>img {
+            width: 100%;
+            height: 210px;
+        }
+
+        #rightbar>div>div>div {
+            height: 60px;
+            border: 2px solid green;
+        }
+
+        #rightbar>div>div>div>p{
+            font-size: 12px;
+            margin-top: 0;
+            width: 80%;
+            margin: auto;
+        }
+
+        #rightbar>div>div>div>BUTTON{
+            height: 20px;
+            width: 194px;
+        }
+
+        #rightbar>div>div>div>BUTTON :hover{
+            background-color: bisque;
+            color: black;
+        }
+
+
+        #mainportion {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar" style="border: 2PX SOLID RED;">
+        <div id="logo"> <a href="./HOME.html"><img
+                src="https://gumlet.assettype.com/afaqs%2F2021-01%2F15f5f827-8e29-4520-af8d-a0f353b8da17%2Fimages.png?auto=format%2Ccompress&w=360&dpr=2.6"
+                alt="Logo"></a></div>
+        <div id="panel">
+
+            <a href="./project_productspage.html">MEN</a>
+            <a href="#">KIDS</a>
+            <a href="#">WOMEN</a>
+            <a href="#">HOME&LIVING</a>
+            <a href="#">BEAUTY</a>
+            <a href="#">STUDIO<SUP style="color: RED;">NEW</SUP></a>
+        </div>
+        <div id="profile">
+            <div id="searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                <input type="text" placeholder="Search for prodcts brands and more.......">
+            </div>
+
+            <div id="icon">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="./Register (Project1).html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Ends -->
+
+    <!-- main portion starts -->
+    <div id="mainportion">
+
+        <!-- leftbar starts -->
+        <div id="leftbar">
+            <div>
+                <h4>FILTERS</h4>
+                <h5 style="color: red;">CLEAR ALL</h5>
+            </div>
+            <hr>
+            <div>
+                <label>Men</label>
+                <input type="radio" />
+                <label>Women</label>
+                <input type="radio" />
+            </div>
+            <hr>
+            <div>
+                <ul>
+                    <li>
+                        <h3>BRAND</h3>
+                    </li>
+                    <input type="checkbox" <li>Campus</li> <br>
+                    <input type="checkbox" <li>ASIAN</li> <br>
+                    <input type="checkbox" <li>TUCSON</li> <br>
+                    <input type="checkbox" <li>Sparx</li> <br>
+                    <input type="checkbox" <li>Allen Cooper</li> <br>
+                    <input type="checkbox" <li>Reebok</li><br>
+                    <input type="checkbox" <li>CLYMB</li> <br>
+                </ul>
+                <hr>
+                <ul>
+                    <li>
+                        <h3>PRICE</h3>
+                    </li>
+                    <input type="checkbox" <li>Rs.529 to Rs.1797</li> <br>
+                    <input type="checkbox" <li>Rs.1797 to Rs. 3065</li> <br>
+                </ul>
+                <hr>
+                <ul>
+                    <li>
+                        <h3>COLOR</h3>
+                    </li>
+                    <input type="checkbox" <li> <span class="dot"></span> Red</li> <br>
+                    <input type="checkbox" <li> <span class="dot"></span> navy blue</li> <br>
+                    <input type="checkbox" <li> <span class="dot"></span> blue</li> <br>
+                    <input type="checkbox" <li> <span class="dot"></span>olive</li> <br>
+                    <input type="checkbox" <li> <span class="dot"></span>maroon</li> <br>
+                </ul>
+                <hr>
+
+                <ul>
+                    <li>
+                        <h3>Discount Range</h3>
+                    </li>
+                    <input type="radio" <li>10% ad above</li> <br>
+                    <input type="radio" <li>20% and above</li> <br>
+                    <input type="radio" <li>30% and above</li> <br>
+                    <input type="radio" <li>40% and above</li> <br>
+                    <input type="radio" <li>50% and above</li> <br>
+                    <input type="radio" <li>60% and above</li> <br>
+                    <input type="radio" <li>70% and above</li> <br>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right bar starts -->
+
+        <div id="rightbar">
+            <div>
+                <div id="lineOneOne">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18074926/2022/9/16/659b76e1-2102-4b2e-9512-a31fe36a75781663327343553-Levis-Men-Blue-511-Slim-Fit-Light-Fade-Stretchable-Jeans-879-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>1999 </p>
+                        <button onclick="addToCart(lineOneOne)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="lineOneTwo">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18074846/2022/9/15/6b94157c-0694-4e85-a461-541ae8f1bd601663230171173-Levis-Men-Blue-Slim-Fit-Heavy-Fade-Stretchable-Jeans-7911663-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Peter England</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>4000 </p>
+                        <button onclick="addToCart(lineOneTwo)">ADD TO CART</button>
+
+                    </div>
+                </div>
+                <div id="lineOneThree"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14984458/2022/6/6/21e9428a-4b3d-469d-af86-05011c7982691654519153611LevisMenNavyBlueBrandLogoSweatshirt1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p> 599 </p>
+                        <button onclick="addToCart(lineOneThree)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="lineOneFour"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11902010/2021/10/21/4cb0f150-e9b3-4ba6-b1ca-9f1d9c2ad3431634809312008-Levis-Men-Blue-Leather-Solid-Two-Fold-Wallet-124163480931174-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>199 </p>
+                        <button onclick="addToCart(lineOneFour)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="lineOneFive"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>898 </p>
+                        <button onclick="addToCart(lineOneFive)" >ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div id="lineTwoOne"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20516546/2022/11/18/2522a618-f6d6-47e9-a1d2-a2da2b3799d01668754292427-Levis-Men-Black-Solid-Pure-Cotton-T-shirt-9011668754291683-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>566</p>
+                        <button onclick="addToCart(lineTwoOne)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="lineTwoTwo"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14851926/2021/8/23/3b6dd4c4-6ebe-43d7-91a4-853deffb90691629721529151-Levis-Men-Shirts-9121629721528606-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 199 </p>
+                        <button onclick="addToCart(lineTwoTwo)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="lineTwoThree"><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087992/2022/7/8/c2e3aa09-4cf8-466b-a7b4-a168265dd4651657271625718-Levis-Men-Yellow--White-Colourblocked-Slim-Fit-Sporty-Jacket-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 159 </p>
+                        <button onclick="addToCart(lineTwoThree)">ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087854/2022/6/23/c29fc470-c32b-491c-a99b-3a51a8dc46651655986205249-Levis-Men-Sweatshirts-3561655986204803-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 199 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20516546/2022/11/18/2522a618-f6d6-47e9-a1d2-a2da2b3799d01668754292427-Levis-Men-Black-Solid-Pure-Cotton-T-shirt-9011668754291683-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14851926/2021/8/23/3b6dd4c4-6ebe-43d7-91a4-853deffb90691629721529151-Levis-Men-Shirts-9121629721528606-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087992/2022/7/8/c2e3aa09-4cf8-466b-a7b4-a168265dd4651657271625718-Levis-Men-Yellow--White-Colourblocked-Slim-Fit-Sporty-Jacket-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087854/2022/6/23/c29fc470-c32b-491c-a99b-3a51a8dc46651655986205249-Levis-Men-Sweatshirts-3561655986204803-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 159 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20516546/2022/11/18/2522a618-f6d6-47e9-a1d2-a2da2b3799d01668754292427-Levis-Men-Black-Solid-Pure-Cotton-T-shirt-9011668754291683-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 199 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14851926/2021/8/23/3b6dd4c4-6ebe-43d7-91a4-853deffb90691629721529151-Levis-Men-Shirts-9121629721528606-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 159 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087992/2022/7/8/c2e3aa09-4cf8-466b-a7b4-a168265dd4651657271625718-Levis-Men-Yellow--White-Colourblocked-Slim-Fit-Sporty-Jacket-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087854/2022/6/23/c29fc470-c32b-491c-a99b-3a51a8dc46651655986205249-Levis-Men-Sweatshirts-3561655986204803-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p>Levis</p>
+                        <p>Men 511 slim Fit Jeans</p>
+                        <p>Rs. 1599 </p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20516546/2022/11/18/2522a618-f6d6-47e9-a1d2-a2da2b3799d01668754292427-Levis-Men-Black-Solid-Pure-Cotton-T-shirt-9011668754291683-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14851926/2021/8/23/3b6dd4c4-6ebe-43d7-91a4-853deffb90691629721529151-Levis-Men-Shirts-9121629721528606-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087992/2022/7/8/c2e3aa09-4cf8-466b-a7b4-a168265dd4651657271625718-Levis-Men-Yellow--White-Colourblocked-Slim-Fit-Sporty-Jacket-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087854/2022/6/23/c29fc470-c32b-491c-a99b-3a51a8dc46651655986205249-Levis-Men-Sweatshirts-3561655986204803-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20516546/2022/11/18/2522a618-f6d6-47e9-a1d2-a2da2b3799d01668754292427-Levis-Men-Black-Solid-Pure-Cotton-T-shirt-9011668754291683-1.jpg"
+                        alt="PHOTO">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14851926/2021/8/23/3b6dd4c4-6ebe-43d7-91a4-853deffb90691629721529151-Levis-Men-Shirts-9121629721528606-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087992/2022/7/8/c2e3aa09-4cf8-466b-a7b4-a168265dd4651657271625718-Levis-Men-Yellow--White-Colourblocked-Slim-Fit-Sporty-Jacket-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18087854/2022/6/23/c29fc470-c32b-491c-a99b-3a51a8dc46651655986205249-Levis-Men-Sweatshirts-3561655986204803-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div><img
+                        src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18973578/2022/9/7/d1b89ffa-52d6-409b-8771-8730ed037a8f1662549515116-Levis-Men-Yellow-Reversible-Padded-Jacket-1361662549514301-1.jpg"
+                        alt="">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
